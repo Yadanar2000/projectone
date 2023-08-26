@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Project 2</title>
+	<style type="text/css">
+
+		body{
+
+			font-family: monospace;
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box; 
+		}
+		
+		.container{
+
+			width: 95%;
+			margin: auto; /*center*/
+
+		}
+		.row::after{
+
+			clear: both;
+			content: "";
+			display: table;
+			
+		}
+
+		.l-col{
+
+			float: left;
+		}
+
+		.r-col{
+
+			float: right;
+			margin-top: 24px;
+		}
+
+		.r-col a{
+
+			color: black;
+			text-decoration: none;
+			font-size: 20px;
+			margin-right: 38px;
+			/*padding: 15px 20px;*/
+		}
+		.slide{
+
+			background-image: url(home.jpg);
+			height: 450px;
+			position: relative; 
+			/*rel:under*/
+		}
+
+		.slide h1{
+			font-size: 45px;
+			color: white;
+			position: absolute;
+			top: 40%;
+			left: 38%;
+		}
+
+		.slide span{
+
+			background: black;
+			padding: 20px;
+			opacity: 0.5;
+		}
+
+		.p-col{
+
+			width: 23%;
+			margin: 10px;
+			float: left;
+			position: relative;
+		}
+
+		.p-col img{
+
+			width: 100%;
+			height: 200px;
+			
+		}
+
+		.p-col .ptext{
+
+			position: absolute;
+			top: -18px;
+			left: 0px;
+
+			font-size: 18px;
+			font-family: monospace;
+			font-weight: bolder;
+
+			color: white;
+			background: black;
+			padding: 10px;
+		}
+
+		 button{
+
+			border: none;
+			padding: 10px;
+
+			width: 100%;
+		}
+
+		button:hover{
+
+			cursor: pointer;
+			background: tomato;
+		}
+
+		input{
+
+			width: 100%;
+			padding: 10px;
+			font-size: 15px;
+
+			border: 1px solid grey;
+
+			border-radius: 22px;
+		}
+
+		.button{
+
+			width: 300px;
+
+			background: black;
+
+			color: white;
+
+			padding: 10px;
+
+			cursor: pointer;
+		}
+
+		footer h2{
+
+			background: black;
+
+			color: white;
+
+			text-align: center;
+
+			padding: 40px;
+
+			position: fixed;
+			bottom: -16px;
+			left: 0;
+			right: 0;
+			width: 100%;
+
+		}
+
+		#header{
+
+			width: 100%;
+			z-index: 1;
+			background: #fff;
+
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+		}
+
+		.ptop{
+
+			padding-top: 80px;
+		}
+
+	</style>
+</head>
+<body>
+
+		<!-- Header -->
+
+ <div class="container" class="ptop">
+
+ 	<div class="row" id="header">
+ 		
+ 		<div class="l-col">
+
+ 			<h1>BR Architects</h1>
+ 			
+ 		</div>
+
+ 		<div class="r-col">
+ 			
+ 		<nav>
+ 		 <a href="#project"> Project </a>
+ 		 <a href="#contact"> Contact </a>
+ 		 <a href="#about"> About </a>
+ 		</nav>
+ 		
+ 		</div>
+
+ 	</div>
+
+ </div>
+
+ <!-- Header -->
+
+ <!-- slide -->
+
+ <div class="slide" class="ptop"> 
+
+ 	<h1> <span >BR</span> Architects </h1>
+
+ </div>
+
+ <!-- slide -->
+
+ <!-- project -->
+
+<div class="container" id="project" class="ptop">
+
+	<h1> Project </h1>
+
+	<hr>
+
+	<div class="row">
+		
+		<div class="p-col">
+
+			<img src="p1.jpg">
+			<p class="ptext">Summer House</p>
+
+		</div>
+
+
+		<div class="p-col">
+
+			<img src="p2.jpg">
+			<p class="ptext">Summer House</p>
+			
+		</div>
+
+
+		<div class="p-col">
+
+			<img src="p3.jpg">
+			<p class="ptext">Summer House</p>
+			
+		</div>
+
+
+		<div class="p-col">
+
+			<img src="p4.jpg">
+			<p class="ptext">Summer House</p>
+			
+		</div>
+
+	<div class="row">
+		
+		<div class="p-col">
+
+			<img src="p5.jpg">
+			<p class="ptext">Summer House</p>
+
+		</div>
+
+
+		<div class="p-col">
+
+			<img src="p6.jpg">
+			<p class="ptext">Summer House</p>
+			
+		</div>
+
+
+		<div class="p-col">
+
+			<img src="p7.jpg">
+			<p class="ptext">Summer House</p>
+			
+		</div>
+
+
+		<div class="p-col">
+
+			<img src="p8.jpg">
+			<p class="ptext">Summer House</p>
+			
+		</div>
+
+	</div>
+
+</div>
+	
+</div>
+
+<!-- project -->
+
+<!-- about -->
+
+<div class="container" id="about" class="ptop">
+	
+	<h1> About </h1>
+
+	<hr>
+
+	<p style="font-size: 18px;"> 
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+
+	<div class="row">
+		
+		<div class="p-col">
+			
+			<img src="a-1.jpg">
+
+			<h2> John Doe </h2>
+
+			<h3> CEO & Founder </h3>
+
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+
+			<button> Contact </button>
+		</div>
+
+		<div class="p-col">
+			
+			<img src="a-2.jpg">
+
+			<h2> John Doe </h2>
+
+			<h3> CEO & Founder </h3>
+
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+
+			<button> Contact </button>
+		</div>
+
+		<div class="p-col">
+			
+			<img src="a-3.jpg">
+
+			<h2> John Doe </h2>
+
+			<h3> CEO & Founder </h3>
+
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+
+			<button> Contact </button>
+		</div>
+
+		<div class="p-col">
+			
+			<img src="a-4.jpg">
+
+			<h2> John Doe </h2>
+
+			<h3> CEO & Founder </h3>
+
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+
+			<button > Contact </button>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!-- About  -->
+
+<!-- Contact Us -->
+
+<div class="container" id="contact" class="ptop">
+
+	<h1> Contact Us </h1>
+
+	<hr>
+
+	<p style="font-size: 18px;"> Lets get in touch and talk about your next project. </p>
+
+	<form>
+		
+		<input type="text" name="" placeholder="Name "> <br> <br> <br>
+
+		<input type="email" name="" placeholder="Email" > <br>  <br> <br>
+
+		<input type="text" name="" placeholder="Subject"> <br>  <br> <br>
+
+		<input type="text" name="" placeholder="comment"> <br>  <br> <br>
+
+		<input type="submit" name="" value="Send Message"  class="button"> <br>  <br> <br>
+
+
+	</form>
+
+
+</div>
+
+<!-- Contact Us -->
+
+<!-- Footer -->
+
+<footer>
+	
+	<h2> Powered By w3.css </h2>
+</footer>
+<!-- Footer -->
+
+
+
+</body>
+</html>
